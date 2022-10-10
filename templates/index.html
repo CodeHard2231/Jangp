@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- <style media="screen">
+      *
+      {
+        color: red;
+        background: black;
+      }
+      input
+      {
+        border: 2px solid green;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      input:hover{
+        cursor: pointer;
+      }
+    </style> -->
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+    <h1>Enter text:</h1>
+    <form method="post" action="counter">
+      {% csrf_token %}
+      <textarea name="words" rows="25" cols="80"></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    {% for feature in features %}
+    <h3>{{feature.id}},{{feature.name}},{{feature.details}}</h3>
+    {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *
+      {
+        background:black;
+        color:red;
+      }
+      #submit{
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body>
+    {%for message in messages %}
+    <h4>{{messages}}</h4>
+    {% endfor %}
+    <h2>Sign Up below</h2>
+    <form class="" action="register" method="post">
+      {% csrf_token %}
+      <p>Username:</p>
+      <input type="text" name="username" value="">
+      <p>Email:</p>
+      <input type="email" name="email" value="">
+      <p>Password:</p>
+      <input type="password" name="password" value="">
+      <p>Repeat Password:</p>
+      <input type="password" name="password1" value="">
+      <br>
+      <input type="submit" name="" value="Submit" id="submit">
+    </form>
+    
+  </body>
+</html>
