@@ -1,0 +1,14 @@
+*
+{
+  color: red;
+  background: black;
+}
+input
+{
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 10px;
+}
+input:hover{
+  cursor: pointer;
+}
