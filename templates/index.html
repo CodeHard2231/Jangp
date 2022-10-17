@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{% static 'index.css' %}">
   </head>
   <body>
-    <h1>Enter text:</h1>
+    <h2>Enter text:</h2>
     <form method="post" action="counter">
       {% csrf_token %}
       <textarea name="words" rows="25" cols="80"></textarea>
