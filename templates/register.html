@@ -16,9 +16,9 @@
   </head>
   <body>
     {%for message in messages %}
-    <h4>{{messages}}</h4>
+    <h5>{{messages}}</h5>
     {% endfor %}
-    <h2>Sign Up below</h2>
+    <h3>Sign Up below</h3>
     <form class="" action="register" method="post">
       {% csrf_token %}
       <p>Username:</p>
